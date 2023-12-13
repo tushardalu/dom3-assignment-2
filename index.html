@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor Management System</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <form id="doctorForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" required>
+
+    <label for="doctorID">Doctor ID:</label>
+    <input type="text" id="doctorID" required>
+
+    <label for="specialization">Specialization:</label>
+    <select id="specialization" required>
+      <option value="Dermatologist">Dermatologist</option>
+      <option value="ENT">ENT</option>
+      <option value="Dentist">Dentist</option>
+      <option value="Gynecologist">Gynecologist</option>
+      <option value="COVID">COVID</option>
+    </select>
+
+    <label for="experience">Experience (in years):</label>
+    <input type="number" id="experience" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" required>
+
+    <label for="mobileNumber">Mobile Number:</label>
+    <input type="tel" id="mobileNumber" required>
+
+    <button type="submit">Add Doctor</button>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Doctor ID</th>
+        <th>Specialization</th>
+        <th>Experience (years)</th>
+        <th>Email</th>
+        <th>Mobile Number</th>
+        <th>Role</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody id="doctorList">
+      <!-- Doctor rows will be appended here -->
+    </tbody>
+  </table>
+
+  <script src="index.js"></script>
+</body>
+</html>
